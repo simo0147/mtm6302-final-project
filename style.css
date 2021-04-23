@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", 'Courier New', Courier, monospace;
+}
+
+hr {
+    border: 1px solid #b8b6b6;
+    border-style: dashed;
+}
+
+.background {
+    background-color: rgba(7, 7, 7, 0.493);
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}   
+
+input[type="radio"] {
+    height: 1rem;   
+    width: 1rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time_greeting {
+    width: 20%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 260px;
+    width: 100%;
+    text-transform: uppercase;
+    order: 1;
+}
+
+.time_greeting .greeting p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.time_greeting .time .curr_time {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 500;
+}
+.time_greeting .time .curr_date {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.setting_morebtn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 4rem;
+}
+
+.more_info {
+    width: 90%;
+    height: 250px;
+    background-color: rgba(48, 45, 45, 0.747);
+    position: fixed;
+    bottom: -250px;
+    transition: bottom 0.7s;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+ }
+
+ .setting-container .heading {
+     display: flex;
+     justify-content: space-between;
+ }
+.setting-container .heading::after {
+    content: "X";
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.setting_bar p {
+    text-transform: uppercase;
+}
+
+.setting_bar {
+    width: 250px;
+    height: 2000px;
+    background-color: rgba(48, 45, 45, 0.631);
+    position: fixed;
+    left: -250px;
+    transition: left 0.7s;
+    z-index: 1;
+    color: #fff;
+ }
+
+ .setting-container {
+    height: 18%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ .main-setting p{
+    text-transform: uppercase;
+ }
+ .main-setting h2{
+    margin-bottom: 3rem;
+ }
+ .main-setting span{
+    margin-right: 1rem;
+ }
+
+ .change {
+    bottom: 0px;
+ }
+
+ .change_settings {
+     left: 0px;
+ }
+
+ .change_btn_position {
+     height: 300px;
+ }
+
+.setting_morebtn .setting i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.705);
+    color: #0e0d0d;
+    outline: none;
+    padding: 0.9rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #413838;
+    color: #fff;
+}
+.btn:hover,
+.fas:hover,
+input[type="radio"] {
+    cursor: pointer;
+}
+
+
+
+.dayofweek p,
+.dayofmonth p,
+.dayofyear p,
+.weekofyear p{
+    text-transform: uppercase;
+}
+
+.weekday,
+.monthday,
+.yearday,
+.weekyear {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 600px){
+    .main {
+        height: 400px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .time_greeting .greeting p {
+        color: #f1dcdc;
+        font-size: 1rem;
+    }
+    .time_greeting .time p {
+        font-size: 4.5rem;
+    }
+    .setting_morebtn {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        width: 90%;
+    }
+    .time_greeting .time .curr_time {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .main {
+        margin-left: 0px;
+    }
+    font {
+        font-size: 1.5rem;
+    }
+    .time_greeting .time .curr_date {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+}
+@media screen and (min-width: 281px) and (max-width: 360px){
+    .time_greeting .greeting p {
+        color: #f1dcdc;
+        font-size: 1rem;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .time_greeting .time p {
+        font-size: 4.5rem;
+    }
+    .setting_morebtn {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        width: 90%;
+    }
+    font {
+        font-size: 1.5rem;
+    }
+    .time_greeting .time .curr_date {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    .time_greeting .time .curr_time {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    .time_greeting .greeting p {
+        color: #f1dcdc;
+        font-size: 1rem;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .time_greeting .time p {
+        font-size: 4.5rem;
+    }
+    .setting_morebtn {  
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        width: 90%;
+    }
+    font {
+        font-size: 1.5rem;
+    }
+    .time_greeting .time .curr_date {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    .time_greeting .time .curr_time {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

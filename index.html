@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="background">
+    <div class="setting_bar">
+        <div class="setting-container">
+            <span class="heading"><h2>Settings</h2></span>
+            <div class="main-setting">
+                <p>24 hour clock</p>
+                <span>
+                    <input type="radio" name="hour" class="hourclock" value="yes">
+                    <span>Yes</span>
+                </span>
+                <span>
+                    <input type="radio" name="hour" class="hourclock" value="no" checked>
+                    <span>No</span>
+                </span>
+            </div>
+            <hr>
+            <div class="main-setting">
+                <p>show seconds</p>
+                <span>
+                    <input type="radio" name="seconds" class="seconds" value="yes">
+                    <span>Yes</span>
+                </span>
+                <span>
+                    <input type="radio" name="seconds" class="seconds" value="no" checked>
+                    <span>No</span>
+                </span>
+            </div>
+            <hr>
+            <div class="main-setting">
+                <p>show date</p>
+                <span>
+                    <input type="radio" name="date" class="date" value="yes">
+                    <span>Yes</span>
+                </span>
+                <span>
+                    <input type="radio" name="date" class="date" value="no" checked>
+                    <span>No</span>
+                </span>
+            </div>
+            <hr>
+            <button type="button" class="btn save">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="time_greeting">
+                <div class="greeting">
+                    <p><span class="greet"></span> it is currently</p>
+                </div>
+                <div class="time">
+                    <p class="curr_time"></p>
+                    <p class="curr_date"></p>
+                </div>
+            </div>
+            <div class="setting_morebtn">
+                <div class="setting">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="more">
+                    <button type="button" class="btn more_btn">More</button>
+                </div>
+            </div>
+        </div>
+        <div class="more_info">
+            <div class="dayofweek">
+                <p>Day of week</p>
+                <h2 class="weekday"></h2>
+            </div>
+            <div class="dayofmonth">
+                <p>Day of month</p>
+                <h2 class="monthday"></h2>
+            </div>
+            <div class="dayofyear">
+                <p>Day of year</p>
+                <h2 class="yearday"></h2>
+            </div>
+            <div class="weekofyear">
+                <p>Week of year</p>
+                <h2 class="weekyear"></h2>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
